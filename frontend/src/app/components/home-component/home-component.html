@@ -1,0 +1,71 @@
+<div class="home-container">
+  <header class="header">
+    <div class="logo"> Integra Info Técnico</div>
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="#">Cursos</a>
+      <a href="#">Eventos</a>
+      <a href="#">Contato</a>
+    </nav>
+    <nav class="nav-mobile">
+      <button class="menu" [class.active]="isActive" (click)="toggleMenu()"></button>
+      <div class="sidebar nav-dropdown" [class.active]="isActive">
+         <div class="sidebar-title">Técnico em Informática</div>
+        <ul>
+        <li><a href="#"> <i class='bx bxs-home'></i> Início</a></li>
+        <li><a href="#"> <i class='bx bx-stats' ></i> Visualizar Dados</a></li>
+        <li><a href="#"> <i class='bx bxs-chat' ></i> Integra AI Chat</a></li>
+        <li><a href="#"> <i class='bx bxs-cog' ></i> Configurações</a></li>
+      </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <!-- Sidebar opcional -->
+    <aside class="sidebar" [class.active]="isActive">
+      <div class="sidebar-title">Técnico em Informática</div>
+      <ul>
+        <li><a href="#"> <i class='bx bxs-home'></i> Início</a></li>
+        <li><a href="#"> <i class='bx bx-stats' ></i> Visualizar Dados</a></li>
+        <li (click)="redirectToChat($event)" ><a href="#"> <i class='bx bxs-chat' ></i> Integra AI Chat</a></li>
+        <li><a href="#"> <i class='bx bxs-cog' ></i> Configurações</a></li>
+      </ul>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <div class="section-title">Conteúdos em Destaque</div>
+      <div class="content-grid">
+        <div class="content-card">
+          <div>
+            <div class="card-title">Matéria do curso</div>
+            <div class="card-desc">Volte a estudar! Continue vendo sua aula de onde você parou ou comece a ver uma nova.</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn">Estudar</button>
+          </div>
+        </div>
+        <div class="content-card">
+          <div>
+            <div class="card-title">Eventos Recentes</div>
+            <div class="card-desc">Veja os principais eventos, palestras e workshops realizados no campus.</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn">Ver Eventos</button>
+          </div>
+        </div>
+        <div class="content-card">
+          <div>
+            <div class="card-title">Biblioteca Digital</div>
+            <div class="card-desc">Acesse livros, artigos e materiais de apoio para os seus estudos.</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn">Acessar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </main>
+</div>

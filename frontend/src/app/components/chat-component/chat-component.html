@@ -1,0 +1,15 @@
+<main>
+
+  <div class="display">
+    @for(k of messages; track k.content){
+      <li [class]="k?.sender === 'User' ? 'user' : 'assistant'">
+        <p>{{ k.content }}</p>
+      </li>
+    }  
+    <hr #hr>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="text" required formControlName="content">
+  </form>
+</main>

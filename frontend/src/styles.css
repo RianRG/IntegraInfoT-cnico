@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+:root {
+  --color-bg-main: #0b0e2a; /* fundo principal */
+  --color-text-main: #ffffff; /* texto principal */
+  --color-header-gradient-start: #0f1336; /* início do gradiente do header */
+  --color-header-gradient-end: #111540; /* fim do gradiente do header */
+  --color-header-shadow: rgba(0, 0, 0, 0.25); /* sombra do cabeçalho */
+  --color-logo: #ffffff; /* cor da logo */
+  --color-nav-link: #c0c3e0; /* links de navegação */
+  --color-nav-link-hover: #8ecfd8; /* hover em links de navegação */
+  --color-main-bg: #1c214a; /* fundo principal da área central */
+  --color-main-shadow: rgba(0, 0, 0, 0.1); /* sombra da área principal */
+  --color-section-title: #00e3ff; /* título das seções */
+  --color-card-bg: #0f1336; /* fundo dos cards */
+  --color-card-shadow: rgba(0, 0, 0, 0.2); /* sombra dos cards */
+  --color-card-hover-shadow: rgba(0, 227, 255, 0.2); /* hover nos cards */
+  --color-card-title: #ffffff; /* título do card */
+  --color-card-desc: #c0c3e0; /* descrição do card */
+  --color-btn-bg: #007bff; /* botão primário */
+  --color-btn-bg-hover: #339dff; /* botão primário hover */
+  --color-btn-secondary-bg: #111540; /* botão secundário fundo */
+  --color-btn-secondary-text: #00e3ff; /* texto do botão secundário */
+  --color-btn-text: #ffffff; /* texto do botão */
+  --color-sidebar-bg: #1f2555; /* fundo da sidebar */
+  --color-sidebar-title: #00e3ff; /* título na sidebar */
+  --color-sidebar-link: #c0c3e0; /* links na sidebar */
+  --color-sidebar-link-hover: #00e3ff; /* hover nos links da sidebar */
+}
